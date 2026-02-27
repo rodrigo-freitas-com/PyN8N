@@ -11,7 +11,7 @@ async def webhook(request: Request):
     chat_id = data.get('data').get('key').get('remoteJid')
     message = data.get('data').get('message').get('conversation')
 
-    if chat_id and message and not '@g.us' in chat_id:
+    if chat_id and message and not '@g.us' in chat_id:  # noqa: E713
         await buffer_message(
             chat_id=chat_id,
             message=message,
