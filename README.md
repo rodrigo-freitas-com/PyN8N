@@ -79,7 +79,11 @@ Após conectar sua instância ao WhatsApp, acesse as configurações da instânc
 - Adicione o seguinte webhook:
 
 ```
+<<<<<<< HEAD
 [http://localhost:8000/webhook](http://localhost:8000/webhook)
+=======
+http://bot:8000/webhook
+>>>>>>> 01b94cb (first commit)
 ```
 
 - Habilite o evento `MESSAGES_UPSERT`
